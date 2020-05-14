@@ -193,11 +193,11 @@ nav{
   color: white;
 }
 .title{
+  font-size: 2.5em;
+  text-align: center;
   background: linear-gradient(to right, #98c1d9,#028090);
   padding: 35px;
-  padding-top: 140px; //gambiarra para não ficar atrás do header. Corrigir depois.
-  font-size: 2.5em ;
-  text-align: center;
+  padding-top: 140px;
   color: white;
   height: auto;
   font-family: 'Gugi', cursive;
