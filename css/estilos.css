@@ -13,6 +13,8 @@ header{
   //background-color: #4D8079;
   //border: 5px solid red;
   padding-left: 5px;
+  z-index: 1;
+  position: fixed;
 }
 header div img{
   width: 5vw;
@@ -51,7 +53,6 @@ p{
   line-height: 1.5;
   text-indent: 1.5em;
   text-align: justify;
-
 }
 li{
   //border: 2px solid blue;
@@ -86,7 +87,11 @@ img{
 nav{
   //margin-top: 10px;
 }
-
+@media(min-width: 500px){
+  .grid_index {
+    grid-template-columns: 100%;
+  }
+}
 .backimage{
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
@@ -99,8 +104,8 @@ nav{
   background-color:#03045e;
   text-decoration: none;
   text-transform: uppercase;
-  transform: skew(-5deg);
-  transition: all 0.3s ease;
+  //transform: skew(-5deg)
+  //transition: all 1s ease;
 }
 
 .botao:hover{
@@ -108,7 +113,7 @@ nav{
 }
 .caixas a:hover{
   color: yellow;
-  transition: all 0.3s ease;
+  //transition: all 0.3s ease;
 }
 .copyright{
   padding-left: 50px;
@@ -190,6 +195,7 @@ nav{
 .title{
   background: linear-gradient(to right, #98c1d9,#028090);
   padding: 35px;
+  padding-top: 140px; //gambiarra para não ficar atrás do header. Corrigir depois.
   font-size: 2.5em ;
   text-align: center;
   color: white;
@@ -219,6 +225,7 @@ nav{
   background-color:#03045e;
   color: white;
   transform: scale(1.2);
+  transition: all 0.3s ease;
   text-align: center;
 }
 
